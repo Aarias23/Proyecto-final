@@ -10,39 +10,105 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background-color: #f5f7fa;
+        color: #333;
       }
 
       header {
-        background-color: #007bff;
+        background: linear-gradient(90deg, #007bff, #0056b3);
         color: #fff;
         text-align: center;
-        padding: 20px 0;
+        padding: 25px 0;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+      }
+
+      nav {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
       nav ul {
         list-style-type: none;
-        padding: 0;
+        padding: 10px;
+        margin: 0;
         text-align: center;
       }
 
       nav ul li {
-        display: inline;
-        margin-right: 20px;
+        display: inline-block;
+        margin: 0 15px;
       }
 
       nav ul li a {
         text-decoration: none;
-        color: #333;
+        color: #007bff;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #0056b3;
       }
 
       main {
+        padding: 25px;
+        max-width: 900px;
+        margin: auto;
+      }
+
+      section {
+        background-color: #fff;
+        border-radius: 8px;
         padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      section h2 {
+        border-left: 5px solid #007bff;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        color: #0056b3;
+      }
+
+      section h3 {
+        margin-top: 20px;
+        color: #333;
+      }
+
+      .toc ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .toc ul li {
+        margin: 8px 0;
+      }
+
+      .toc ul li a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .toc ul li a:hover {
+        color: #0056b3;
       }
 
       footer {
         background-color: #f8f9fa;
         text-align: center;
-        padding: 10px 0;
+        padding: 12px 0;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #555;
+        border-top: 1px solid #ddd;
       }
     </style>
   </head>
@@ -53,13 +119,12 @@
     <nav>
       <ul>
         <li><a href="#portada">Portada</a></li>
+        <li><a href="#indice">Índice</a></li>
         <li><a href="#introduccion">Introducción</a></li>
         <li><a href="#perfil">Perfil Personal</a></li>
-        <li>
-          <a href="#estructuras">Estructuras Gramaticales y Vocabulario</a>
-        </li>
-        <li><a href="#vocabulario">Vocabulario Temático</a></li>
-        <li><a href="#lectura">Lectura y Comprensión</a></li>
+        <li><a href="#estructuras">Estructuras</a></li>
+        <li><a href="#vocabulario">Vocabulario</a></li>
+        <li><a href="#lectura">Lectura</a></li>
         <li><a href="#conclusion">Conclusión</a></li>
         <li><a href="#bibliografia">Bibliografía</a></li>
       </ul>
@@ -74,15 +139,34 @@
         <p>Fecha de entrega</p>
         <p>Escuela o institución</p>
       </section>
+
+      <section id="indice" class="toc">
+        <h2>Índice</h2>
+        <ul>
+          <li><a href="#portada">Portada</a></li>
+          <li><a href="#introduccion">Introducción</a></li>
+          <li><a href="#perfil">Chapter I: Personal Profile</a></li>
+          <li>
+            <a href="#estructuras"
+              >Capítulo II: Estructuras Gramaticales y Vocabulario</a
+            >
+          </li>
+          <li><a href="#vocabulario">Chapter III: Thematic Vocabulary</a></li>
+          <li><a href="#lectura">Chapter IV: Reading and Comprehension</a></li>
+          <li><a href="#conclusion">Conclusión</a></li>
+          <li><a href="#bibliografia">Bibliografía</a></li>
+        </ul>
+      </section>
+
       <section id="introduccion">
         <h2>Introducción</h2>
         <p>Breve descripción del contenido del trabajo</p>
         <p>Objetivos del trabajo</p>
         <p>Importancia del estudio del inglés</p>
       </section>
+
       <section id="perfil">
         <h2>Chapter I: Personal Profile</h2>
-
         <p>
           <strong>Name and Preferred Form of Address:</strong> What would you
           like to be called?
@@ -127,13 +211,17 @@
           in your free time.
         </p>
       </section>
+
       <section id="estructuras">
         <h2>Capítulo II: Estructuras Gramaticales y Vocabulario</h2>
         <h2>Verbo To Be</h2>
         <ul>
           <li>10 affirmative sentences using the verb "to be".</li>
           <li>10 negative sentences using the verb "to be".</li>
-          <li>10 questions using the verb "to be".</li>
+          <li>
+            10 questions using the verb "to be" and answer each of them using
+            short answer.
+          </li>
         </ul>
 
         <h2>Simple Present</h2>
@@ -149,6 +237,7 @@
           <li>10 negative sentences in the present continuous tense.</li>
           <li>10 questions in the present continuous tense.</li>
         </ul>
+
         <h2>Wh- Questions</h2>
         <ul>
           <li>
@@ -165,6 +254,7 @@
           </li>
         </ul>
       </section>
+
       <section id="vocabulario">
         <h2>Chapter III: Thematic Vocabulary</h2>
         <p>
@@ -180,39 +270,59 @@
           words.
         </p>
       </section>
+
       <section id="lectura">
-  <h2>Chapter IV: Reading and Comprehension</h2>
-  <h3>Text: Lucas the Coffee Shop Manager</h3>
-  <p>
-    Lucas is a coffee shop manager in a small town. He wakes up early every day at 5:30 AM. First, he prepares his breakfast and takes a quick shower. Then he walks to the coffee shop, which opens at 7:00 AM.
-  </p>
-  <p>
-    Lucas serves coffee, tea, and pastries to his customers. He greets everyone with a smile and remembers most of his customers' favorite drinks. During the morning, he organizes the counter and checks inventory.
-  </p>
-  <p>
-    At noon, Lucas takes a short break and eats a sandwich. In the afternoon, he trains new employees and meets with suppliers. He usually finishes work at 4:00 PM and returns home.
-  </p>
-  <p>
-    In the evening, Lucas reads books or watches documentaries. He always goes to bed before 10:00 PM because he starts work early the next day.
-  </p>
-  <h3>Comprehension Questions:</h3>
-  <ol>
-    <li>What is Lucas’s job?</li>
-    <li>What time does he wake up?</li>
-    <li>What does he do after breakfast?</li>
-    <li>What time does the coffee shop open?</li>
-    <li>What does Lucas serve in the shop?</li>
-    <li>How does Lucas treat his customers?</li>
-    <li>What does he do at noon?</li>
-    <li>Who does Lucas meet with in the afternoon?</li>
-    <li>What does Lucas do in the evening?</li>
-    <li>Why does he go to bed early?</li>
-  </ol>
+        <h2>Chapter IV: Reading and Comprehension</h2>
+        <h3>Text: Ana the Teacher</h3>
+        <p>
+          Ana is a teacher in a public school. She wakes up at 6:00 AM every
+          day. First, she eats breakfast with her family and then she takes the
+          bus to school. Her classes start at 7:30 AM.
+        </p>
+        <p>
+          In the classroom, Ana teaches English to young students. She explains
+          grammar, asks questions, and gives exercises. She always speaks slowly
+          so her students can understand her. The students enjoy her classes
+          because she is patient and friendly.
+        </p>
+        <p>
+          At noon, Ana eats lunch in the school cafeteria with other teachers.
+          She usually eats rice, beans, and chicken. After lunch, she prepares
+          lesson plans and checks students’ notebooks. She corrects their
+          mistakes and writes feedback.
+        </p>
+        <p>
+          In the afternoon, Ana sometimes attends meetings with other teachers.
+          She also talks with parents about their children’s progress. At 3:00
+          PM, she finishes her work and takes the bus back home.
+        </p>
+        <p>
+          At home, Ana spends time with her children. She helps them with
+          homework, cooks dinner, and cleans the house. In the evening, she
+          reads a book or listens to music. She usually goes to bed at 10:00 PM
+          because she wakes up early every day.
+        </p>
+
+        <h3>Comprehension Questions:</h3>
+        <ol>
+          <li>What is Ana’s job?</li>
+          <li>What time does Ana wake up?</li>
+          <li>How does she go to school?</li>
+          <li>What subject does she teach?</li>
+          <li>Why do students enjoy her classes?</li>
+          <li>Where does Ana eat lunch?</li>
+          <li>What does she do after lunch?</li>
+          <li>Who does Ana talk to in the afternoon?</li>
+          <li>What does Ana do at home in the evening?</li>
+          <li>Why does Ana go to bed early?</li>
+        </ol>
       </section>
+
       <section id="conclusion">
         <h2>Conclusion</h2>
         <p>Personal reflection on the progress made and the goals achieved.</p>
       </section>
+
       <section id="bibliografia">
         <h2>Bibliography</h2>
         <p>
@@ -221,9 +331,11 @@
         </p>
       </section>
     </main>
+
     <footer>
-      <p>&copy; 2025 Trabajo Final asignagura Inglés I</p>
+      <p>&copy; 2025 Trabajo Final asignatura Inglés I</p>
     </footer>
   </body>
 </html>
+
 
